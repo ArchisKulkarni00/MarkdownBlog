@@ -1,17 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Blog from './components/Blog';
 import reportWebVitals from './reportWebVitals';
-import Markdown from 'react-markdown';
-
-const markdownText = '## Hi this is test markdown.\n\n**bold test**'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-    {/* <Markdown>{markdownText}</Markdown> */}
+    <Blog></Blog>
   </React.StrictMode>
 );
 
