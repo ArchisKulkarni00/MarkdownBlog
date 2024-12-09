@@ -1,0 +1,101 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Standard text color */
+}
+
+/* Blog Container */
+.blog-container {
+    max-width: 800px; /* Limit width for readability */
+    margin: 40px auto; /* Center horizontally and add vertical spacing */
+    padding: 20px;
+    background-color: #ffffff; /* White background for the blog content */
+    border-radius: 10px; /* Rounded corners for a soft look */
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* A playful, professional font */
+    color: #4a90e2; /* Fun blue for headers */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.6; /* Better readability */
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Links */
+a {
+    color: #f76a8c; /* Fun pink */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tables */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #ddd; /* Light border */
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternating row colors */
+}
+
+/* Code Blocks */
+pre {
+    background-color: #272822; /* Dark background for code blocks */
+    color: #f8f8f2; /* Light text */
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto; /* Horizontal scrolling for long lines */
+}
+
+code {
+    font-family: 'Courier New', monospace; /* Monospaced font */
+    background-color: #f2f2f2; /* Light gray background */
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 5px solid #f76a8c; /* Pink border */
+    padding-left: 15px;
+    margin: 20px 0;
+    color: #555;
+    font-style: italic;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+ul li {
+    list-style-type: disc;
+}
+
+ol li {
+    list-style-type: decimal;
+}

@@ -3,6 +3,7 @@ import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import readMDFile from './utils';
 import { useState,useEffect } from 'react';
+import "./Blog-dark.css";
 
 
 function Blog(props) {
@@ -10,7 +11,7 @@ function Blog(props) {
 
     useEffect(() => {
         const fetchMarkdown = async () => {
-            const content = await readMDFile("DopamineMotivation.md");
+            const content = await readMDFile("DemoFile.md");
             console.log(content);
             setMarkdownContent(content);
         };
