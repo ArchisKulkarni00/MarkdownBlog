@@ -51,9 +51,9 @@ You can style text in multiple ways:
 ## Links and Images 🌐
 
 Check out this [awesome website](https://www.example.com)!  
-Here's an image of a cute kitten:  
+Here's an image of a Random Image:  
 
-![Cute Kitten](https://placekitten.com/400/300)
+![Cute Kitten](https://picsum.photos/200/300)
 
 ---
 
@@ -83,6 +83,28 @@ const greet = () => {
     return "Have a great day! 😊";
 };
 ```
+
+---
+
+## Math Rendering 🧮
+
+This blog can also render math equations using **KaTeX**! Here are some examples:
+
+### Inline Math
+The quadratic formula is given by $(x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a})$.
+
+### Display Math
+Here’s a display equation for better clarity:
+
+$$
+E = mc^2
+$$
+
+Another example of a summation:
+
+$$
+\sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+$$
 
 ---
 

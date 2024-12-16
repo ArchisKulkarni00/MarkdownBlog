@@ -1,9 +1,11 @@
 import React from 'react';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 import readMDFile from './utils';
 import { useState,useEffect } from 'react';
-import "./Blog-dark.css";
+import "./Blog.css";
 
 
 function Blog(props) {
@@ -19,7 +21,7 @@ function Blog(props) {
     }, []);
     return (
         <div className='blog-container'>
-            <Markdown remarkPlugins={[remarkGfm]}>
+            <Markdown remarkPlugins={[remarkGfm, remarkMath] } rehypePlugins={[rehypeKatex]}>
                 {markdownContent}
             </Markdown>
         </div>

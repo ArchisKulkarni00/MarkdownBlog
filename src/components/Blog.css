@@ -1,0 +1,164 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+/* Shared Styles */
+.blog-container {
+    max-width: 800px; /* Limit width for readability */
+    margin: 40px auto; /* Center horizontally and add vertical spacing */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for a soft look */
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(71, 71, 71) 0px 0px 0px 1px inset; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif; /* A playful, professional font */
+    margin-top: 25px; /* Increase top margin */
+    margin-bottom: 15px; /* Increase bottom margin */
+}
+
+img {
+    border-radius: 3px;
+}
+
+p {
+    line-height: 1.8; /* Better readability */
+    margin: 15px 0; /* Increase vertical spacing */
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: inherit; /* Alternating row colors will inherit based on theme */
+}
+
+pre {
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto; /* Horizontal scrolling for long lines */
+}
+
+code {
+    font-family: 'Courier New', monospace; /* Monospaced font */
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+blockquote {
+    padding-left: 15px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+ul li {
+    list-style-type: disc;
+}
+
+ol li {
+    list-style-type: decimal;
+}
+
+/* Light Theme */
+.light {
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Standard text color */
+}
+
+.light .blog-container {
+    background-color: #ffffff; /* White background for the blog content */
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.light h1, h2, h3, h4, h5, h6 {
+    color: #4a90e2; /* Fun blue for headers */
+}
+
+.light a {
+    color: #f76a8c; /* Fun pink for links */
+}
+
+.light table {
+    border: 1px solid #ddd; /* Light border */
+}
+
+.light tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternating row colors */
+}
+
+.light pre {
+    background-color: #f2f2f2; /* Light gray background for code blocks */
+    color: #333; /* Standard text */
+}
+
+.light blockquote {
+    border-left: 5px solid #f76a8c; /* Pink border */
+    color: #555;
+}
+
+/* Dark Theme */
+.dark {
+    background-color: #232323; /* Soft dark background */
+    color: #a7a7a7; /* Light gray text for readability */
+}
+
+.dark .blog-container {
+    background-color: #272727; /* Slightly lighter background for the blog content */
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(80, 80, 80) 0px 0px 0px 1px inset;
+}
+
+.dark h1, h2, h3, h4, h5, h6 {
+    color: #62b6ff; /* Calming blue for headers */
+}
+
+.dark a {
+    color: #ff8ba0; /* Warm pink for links */
+}
+
+.dark table {
+    border: 1px solid #444444; /* Dark gray border */
+}
+/* 
+.dark tr:nth-child(even) {
+    background-color: #3a3a3a;
+} */
+
+.dark pre {
+    background-color: #1f2937; /* Dark blue-gray background for code blocks */
+    color: #d1d5db; /* Light text */
+}
+
+.dark blockquote {
+    border-left: 5px solid #ff8ba0; /* Pink border */
+    background-color: #2a2a2a; /* Slightly lighter background for contrast */
+    color: #e0e0e0;
+}

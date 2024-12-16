@@ -2,12 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Blog from './components/Blog';
+import Navbar from './components/Navbar';
 import reportWebVitals from './reportWebVitals';
+import { ThemeProvider } from './Theme-Context';
+
+const savedTheme = localStorage.getItem("theme") || "light";
+// Apply the theme class to the body before rendering
+document.body.className = savedTheme;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Blog></Blog>
+    <ThemeProvider>
+      <Navbar blogName="My Blog" />
+      <Blog></Blog>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
