@@ -3,7 +3,7 @@ import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
-import readMDFile from './utils';
+import {readMDFile} from './utils';
 import { useState,useEffect } from 'react';
 import "./Blog.css";
 
@@ -14,7 +14,6 @@ function Blog(props) {
     useEffect(() => {
         const fetchMarkdown = async () => {
             const content = await readMDFile("DemoFile.md");
-            console.log(content);
             setMarkdownContent(content);
         };
         fetchMarkdown();

@@ -51,9 +51,14 @@ You can style text in multiple ways:
 ## Links and Images 🌐
 
 Check out this [awesome website](https://www.example.com)!  
-Here's an image of a Random Image:  
+Here's a Random Image:  
 
+*This is an external (online) image*
 ![Cute Kitten](https://picsum.photos/200/300)
+
+*This is an internal (from the files) image*
+![Cute Kitten](../images/sample.png)
+![Cute Kitten](../images/sample2.png)
 
 ---
 
