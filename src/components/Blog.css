@@ -11,6 +11,8 @@ body, html {
     margin: 40px auto; /* Center horizontally and add vertical spacing */
     padding: 20px;
     border-radius: 10px; /* Rounded corners for a soft look */
+    width: 90%;
+    box-sizing: border-box;
     /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(71, 71, 71) 0px 0px 0px 1px inset; */
 }
 
@@ -25,7 +27,8 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 800px;
+    max-width: 100%;
+    height: auto;
     margin-top: 5px;
     margin-bottom: 5px;
 }
