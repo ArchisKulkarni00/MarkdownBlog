@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# MarkdownBlog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📖 About the Project
+This project was created to serve as a light weight blogging platform ([and some other applications](#alternate-applications)) that seamlessly integrates with markdown files. By leveraging markdown for content and modern web technologies, this project aims to keep the blogging experience simple, fast, and customizable. (Just put your markdown into a folder and your blog is ready!)
 
-## Available Scripts
 
-In the project directory, you can run:
+### 🌟 Key Objectives
+1. **Ease of Use**: Write blogs in markdown and render them effortlessly on the web.
+2. **Customization**: Use your own styles and components to match your needs.
+3. **Dynamic Rendering**: Support dynamic imports of images and assets from the project directory.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### ✅ Implemented Features
+- Render markdown content into styled blog posts.
+- Support for most of the markdown syntax including headings, lists, tables, blockquotes, and code blocks.
+- Theme toggle (Light/Dark mode). 
+- Responsive layout for blogs and images.
+- Dynamically load internal images referenced in markdown.
 
-### `npm test`
+### 🚧 Planned Features
+- [ ] Add support for syntax highlighting in code blocks.
+- [ ] Add page for handling all the blogs.
+- [ ] Database support for storing details of blogs.
+- [ ] Inbuilt markdown editor (maybe, not sure).
+- [ ] Implement a search functionality to filter blogs.
+- [ ] Create a category/tag/folder system for better organization.
+- [ ] More themes and customization 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Setup Instructions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- npm (comes with Node.js) or yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Steps
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/ArchisKulkarni00/MarkdownBlog.git
+   cd <repository-folder>
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+   or, if using yarn:
+   ```bash
+   yarn install
+   ```
 
-### `npm run eject`
+3. **Run the development server**
+   ```bash
+   npm start
+   ```
+   or, if using yarn:
+   ```bash
+   yarn start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **View the application**
+   Open your browser and navigate to `http://localhost:3000` to see the blog.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. **Add Markdown Files**
+   - Store your markdown files in the `/src/articles` directory (currently fixed structure, may change).
+   - Store images under `/src/images` directory
+   - Add relative paths to images within the markdown file (eg `../images/sample.png`).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📸 Screenshots
 
-## Learn More
+_Add screenshots of the blog interface, dark/light themes, and markdown rendering here._
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Light Mode**:
+   ![Light Mode](./screenshots/light-mode.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Dark Mode**:
+   ![Dark Mode](./screenshots/dark-mode.png)
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Alternate Applications🔄 <a id='alternate-applications'></a>
 
-### Analyzing the Bundle Size
+1. **Knowledge Base or Wiki**: Document workflows, FAQs, or team knowledge with searchable articles.  
+2. **Recipe Book**: Store and share recipes with tags and filters for meal types or difficulty.  
+3. **Academic Notes Repository**: Upload lecture notes or research papers with collaborative editing.  
+4. **Portfolio Builder**: Showcase artworks, coding projects, or professional achievements.  
+5. **Travel Journal**: Document trips with itineraries, photos, and maps.  
+6. **User Manual/Documentation Platform**: Host user guides, API references, or troubleshooting steps.  
+7. **Event Management/Announcement Board**: Share event updates, schedules, and photos.  
+8. **Learning Platform for Tutorials**: Publish step-by-step guides with code highlighting and progress tracking.  
+9. **Personal Productivity Dashboard**: Manage tasks, journaling, and projects in one place.  
+10. **Multimedia Magazine**: Create a platform for stories, poems, and articles with dynamic layouts.  
+11. **AI-Powered Research Assistant**: Use AI to summarize, highlight, and search markdown content.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+These ideas extend the project's functionality while retaining its core markdown-processing capabilities.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🧰 Tech Stack
+- React.js
+- CSS Modules
+- Markdown Parsing: `react-markdown`
+- Webpack for bundling
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check out the [issues page](./issues) or submit a pull request.
 
-### Deployment
+**Document written with GPT and 💖*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

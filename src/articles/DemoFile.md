@@ -54,11 +54,11 @@ Check out this [awesome website](https://www.example.com)!
 Here's a Random Image:  
 
 *This is an external (online) image*
-![Cute Kitten](https://picsum.photos/200/300)
+![Sample Image](https://picsum.photos/200/300)
 
 *This is an internal (from the files) image*
-![Cute Kitten](../images/sample.png)
-![Cute Kitten](../images/sample2.png)
+![Sample Image](../images/sample.png)
+![Sample Image](../images/sample2.png)
 
 ---
 
